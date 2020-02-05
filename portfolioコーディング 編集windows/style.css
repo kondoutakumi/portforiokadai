@@ -1,0 +1,344 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;}
+
+.wrap{
+    width:100%;
+    height:5000px;
+    margin: 0 auto;
+    font-family: 'Merienda', cursive;
+  background:black;
+}
+
+.Portfoliotitle{
+    font-size: 40px;
+    color: white;
+}
+
+.fullname p{
+display: inline-block;
+position: relative;
+right: 450px;
+font-size: 50px; 
+bottom: 600px;    
+margin: 40px; 
+color: white;
+}
+
+
+.main{
+    font-size: 30px;
+    text-align: center;
+    margin: 80px;
+}
+.menu{
+    
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    left: 93%;
+    bottom: 150px;
+}
+.likewrap{
+    
+    background-color: black;
+    width: 100%;
+    height: 1500px;
+    border: 1px solid white;
+}
+
+.like{
+    position: absolute;
+    margin: 60px;
+    left: 230px;
+    top: 1410px;
+    font-size:80px;
+    color: white;
+  
+}
+.likewrap img{
+    
+    position: relative;
+    top: 240px;
+    
+}
+
+
+.cafewrap{
+    background-color:black;
+    width: 100%;
+    height:1500px;
+    border: 1px solid white;
+    
+}
+.cafe{
+    position: absolute;
+    margin: 60px;
+    left: 240px;
+    top: 2920px;
+    font-size:80px;
+    color: white;
+}
+
+.cafewrap img{
+    position: relative;
+    top: 240px; 
+    
+}
+
+
+.shoopingwrap{
+    
+    background-color: black;
+    width: 100%;
+    height: 1500px;
+    border: 1px solid white;
+}
+.shooping{  
+    position: absolute;
+    margin: 60px;
+    left: 70px;
+    top: 4430px;
+    font-size:80px;
+    color: white;
+}
+.shoopingwrap img{
+
+    position: relative;
+    top: 240px; 
+}
+
+
+.designwrap{
+   
+    background-color: black;
+    width: 100%;
+    height: 1500px;
+    border: 1px solid white;
+}
+.design{
+    
+    position: absolute;
+    margin: 60px;
+    left: 135px;
+    top: 5910px;
+    font-size:80px;
+    color: white;
+    
+}
+.designwrap img{
+    
+    position: relative;
+    top: 300px;
+    
+}
+
+
+
+footer{
+
+position: fixed;
+bottom: 0;
+width: 100%;
+height: 70px;
+background-color: gray;
+border: 1px solid black;
+
+}
+
+footer p{
+    color: white;
+    font-size: 25px;
+    line-height: 70px;
+    text-align: center;
+  
+}
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,.16);
+    z-index: 2;
+}
+.global-nav {
+  position: fixed;
+  right: -320px; /* これで隠れる */
+  top: 0;
+  width: 300px; /* スマホに収まるくらい */
+  height: 100vh;
+  padding-top: 40px;
+  background-color: #fff;
+  transition: all .6s;
+  z-index: 200;
+  overflow-y: auto; /* メニューが多くなったらスクロールできるように */
+   
+}
+.hamburger {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40px; /* クリックしやすいようにちゃんと幅を指定する */
+  height: 40px; /* クリックしやすいようにちゃんと高さを指定する */
+  cursor: pointer;
+  z-index: 300;
+}
+.global-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.global-nav__item {
+  text-align: center;
+  padding: 0 14px;
+}
+.global-nav__item a {
+  display: block;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  text-decoration: none;
+  color: #111;
+}
+.global-nav__item a:hover {
+  background-color: #eee;
+}
+.hamburger__line {
+  position: absolute;
+  left: 11px;
+  width: 18px;
+  height: 1px;
+  background-color: #111;
+  transition: all .6s;
+}
+.hamburger__line--1 {
+  top: 14px;
+}
+.hamburger__line--2 {
+  top: 20px;
+}
+.hamburger__line--3 {
+  top: 26px;
+}
+.black-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background-color: #000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .6s;
+  cursor: pointer;
+    z-index: ;
+}
+/* 表示された時用のCSS */
+.nav-open .global-nav {
+  right: 0;
+}
+.nav-open .black-bg {
+  opacity: .8;
+  visibility: visible;
+}
+.nav-open .hamburger__line--1 {
+  transform: rotate(45deg);
+  top: 20px;
+}
+.nav-open .hamburger__line--2 {
+  width: 0;
+  left: 50%;
+}
+.nav-open .hamburger__line--3 {
+  transform: rotate(-45deg);
+  top: 20px;
+}
+.theworkLike{
+position: absolute;
+right:20px;
+padding: 10px;  
+bottom: 0px;
+top:1068px;
+    
+}
+
+.theworkCafe{  
+position: absolute;
+right:20px;
+padding: 10px;  
+bottom: 0px;
+top:2565px;       
+            
+}
+
+.theworkShooping{
+position: absolute;
+right:20px;
+padding: 10px;  
+bottom: 0px;
+top:4070px;        
+}
+
+.theworkDesigin{
+position: absolute;
+right:20px;
+padding: 10px;  
+bottom: 0px;
+top:5520px;        
+}
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+/* 〜479px：SP縦
+------------------------------ */
+ここに基本CSSを書きます。
+モバイルファーストでは、モバイル最小値からPCの大きさに向けて、以降のCSSを書いていきます。
+ 
+ 
+/* 480px〜599px：SP横
+------------------------------ */
+@media screen and (min-width:480px) and (max-width:599px) { 
+ 
+ 
+}
+ 
+/* 600px〜959px：タブレット
+------------------------------ */
+@media screen and (min-width:600px) and (max-width:959px) {
+ 
+ 
+}
+ 
+/* 960px〜1279px：小型PC
+------------------------------ */
+@media screen and (min-width:960px) and (max-width:1279px) {
+ 
+ 
+}
+ 
+/* 1280px〜：大型PC
+------------------------------ */
+@media screen and (min-width:1280px) {
+ 
+ 
+}
+
+
+
+
+

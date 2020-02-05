@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>parallax</title>
+	<meta name="Author" content=""/>
+	<link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-scrollify@1/jquery.scrollify.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>     
+
+</head>
+<body>    
+    <div class="wrap">
+
+
+<section>
+<div class="main">
+    <div class="box box1"> 
+<div class="Portfoliotitle">        
+<h1>Portfolio</h1></div></div>
+
+ <header class="header">
+  <nav class="global-nav">
+    <ul class="global-nav__list">
+      <li class="global-nav__item"><a href="">HOME</a></li>
+      <li class="global-nav__item"><a href="#1">LIKE</a></li>
+      <li class="global-nav__item"><a href="#2">CAFE</a></li>
+      <li class="global-nav__item"><a href="#3">SHOPPING</a></li>
+      <li class="global-nav__item"><a href="#4">DESIGN</a></li>
+    </ul>
+  </nav>
+     
+
+  <div class="hamburger" id="js-hamburger">
+    <span class="hamburger__line hamburger__line--1"></span>
+    <span class="hamburger__line hamburger__line--2"></span>
+    <span class="hamburger__line hamburger__line--3"></span>
+  </div>
+  
+</header> 
+<div class="black-bg" id="js-black-bg"></div>
+    
+<div class="fullname">
+       
+<div class="firstname">    
+<p>Takumi</p></div>
+    
+<p>Kondo</p></div>
+
+<div class="fullname">    
+<p>Web designer</p> 
+</div> </div> </section>  
+
+<div id="1">
+<div class="likewrap">    
+<section>
+<div class="box box2">    
+ <div class="like">   
+     <h2>LIKE</h2></div></div>      
+ <div class="theworkLike">   
+<figure><a href="myfavoritethings/index.html"><img src="img/like.jpg" width="400px" height="550px"></a></figure></div>
+    </section> </div></div>
+    
+
+
+<div id="2">    
+<div class="cafewrap">    
+<section> 
+<div class="box box3">    
+<div class="cafe">    
+    <h2>CAFE</h2></div></div>
+ <div class="theworkCafe">   
+     <figure><a href="cafedesign/index.html"><img src="img/cafe2.jpg" width="400px" height="550px"></a></figure></div>    
+    </section></div></div>
+<div id="3">
+<div class="shoopingwrap">    
+ <section>
+    <div class="box box4"> 
+<div class="shooping">    
+    <h2>SHOOPING</h2></div> </div>   
+<div class="theworkShooping">   
+    <figure><a href="shopping/index.html"><img src="img/shoop.jpg" width="400px" height="550px"></a></figure></div>     
+    </section> </div></div>
+
+<div id="4">    
+<div class="designwrap">   
+<section>
+    <div class="box box5">
+<div class="designwrap">    
+<div class="design">
+    <h2>DESIGN</h2></div>   </div> 
+<div class="theworkDesigin">   
+    <figure><a href="desigin1.html"><img src="img/Design.jpg" width="500px" height="500px"></a></figure></div>    
+    </div> </section> </div></div>
+    
+ <footer>
+     
+<p>© 2019 Portfolio Kondo</p>    
+     
+ <canvas class="background"></canvas>   
+    
+   <script>
+   window.onload = function() {
+  Particles.init({
+    selector: '.background',
+    sizeVariations: 30,
+    color: [
+      '#0bd', 'white', 'rgba(0,187,221,.2)'
+    ]
+  });
+};
+             
+    function toggleNav() {
+  var body = document.body;
+  var hamburger = document.getElementById('js-hamburger');
+  var blackBg = document.getElementById('js-black-bg');
+
+  hamburger.addEventListener('click', function() {
+    body.classList.toggle('nav-open');
+  });
+  blackBg.addEventListener('click', function() {
+    body.classList.remove('nav-open');
+  });
+}
+toggleNav();
+$('a[href^="#"]').click(function() {
+  // スクロールの速度
+  var speed = 1500; // ミリ秒で記述
+  var href = $(this).attr("href");
+  var target = $(href == "#" || href == "" ? 'html' : href);
+  var position = target.offset().top;
+  $('body,html').animate({
+    scrollTop: position
+  }, speed, 'swing');
+  return false;
+});  
+$.scrollify({section:".box"});
+bubbly({
+  colorStart: '#fff4e6',
+  colorStop: '#ffe9e4',
+  blur: 1,
+  compose: 'source-over',
+  bubbleFunc:() => `hsla(${Math.random() * 50}, 100%, 50%, .3)`
+});
+
+       
+       
+    
+    </script> 
+
+    
+
+    </footer>   
+       </div>
+</body>
+</html>
+
+
+
+
+
